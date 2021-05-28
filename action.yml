@@ -14,9 +14,13 @@ inputs:
     default: ${{ github.run_id }}
     required: true
   SET_ENV_NAME:
-    description: Env name
+    description: Env name for final conclusion
     required: false
     default: WORKFLOW_CONCLUSION
+  SET_ENV_NAME_ALL:
+    description: Env name for list of all conclusions
+    required: false
+    default: WORKFLOW_CONCLUSIONS_ALL
   FALLBACK_CONCLUSION:
     description: Fallback conclusion
     required: false

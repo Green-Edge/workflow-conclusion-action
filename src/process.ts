@@ -49,4 +49,9 @@ export const execute = async(logger: Logger, octokit: Octokit, context: Context)
   if (envName) {
     exportVariable(envName, conclusion);
   }
+
+  const envNameAll = getInput('SET_ENV_NAME_ALL');
+  if (envNameAll) {
+    exportVariable(envNameAll, conclusions);
+  }
 };
